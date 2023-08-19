@@ -7,3 +7,14 @@
   padding: 10px;
   text-align: center;
 }
+.loading {
+  font-weight: bold; /* Жирный стиль */
+  font-style: italic; /* Курсивный стиль */
+  font-size: 2rem
+}
+.error {
+	font-weight: bold; /* Жирный стиль */
+  font-style: italic; /* Курсивный стиль */
+  font-size: 2rem;
+  background-color: rgb(218, 66, 66);
+}
