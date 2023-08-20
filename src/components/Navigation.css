@@ -1,0 +1,13 @@
+.navPage { 
+	display: flex;
+	width: auto;
+	border: 4px solid rgb(116, 12, 109);
+	background-color: yellow;
+}
+.storeName {
+	font: bold;
+	text-decoration-color: blueviolet;
+}
+.links {
+	text-align:left;
+}

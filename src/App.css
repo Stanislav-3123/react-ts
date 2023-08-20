@@ -18,3 +18,41 @@
   font-size: 2rem;
   background-color: rgb(218, 66, 66);
 }
+
+
+	.add-product-button {
+		text-decoration: none;
+		color: rgb(141, 37, 37);
+		display: inline-block;
+		position: relative;
+		padding: 15px 30px;
+		border: 1px solid;
+		border-image: linear-gradient(180deg, #259733, #259733, #259733, #259733);
+		border-image-slice: 1;
+		margin: 10px 20px;
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		overflow: hidden;
+		letter-spacing: 2px;
+		transition: .8s cubic-bezier(.165, .84, .44, 1);
+	 }
+	 .add-product-button:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 0;
+		width: 100%;
+		z-index: -1;
+		color: white;
+		background: linear-gradient(180deg, #259733, #259733, #259733, #259733);
+		transition: .8s cubic-bezier(.165, .84, .44, 1);
+	 }
+	 .add-product-button:hover {
+		background: rgba(255, 255, 255, 0);
+	 }
+	 .add-product-button:hover:before {
+		bottom: 0%;
+		top: auto;
+		height: 100%;
+	 }

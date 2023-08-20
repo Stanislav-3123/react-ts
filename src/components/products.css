@@ -1,8 +1,8 @@
 .products {
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   margin: 1px;
   border: 4px solid rgb(4, 89, 49);
   padding: 5px;

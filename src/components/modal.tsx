@@ -1,17 +1,21 @@
-import React from 'react';
+import React from "react";
+import "./modal.css";
 
-type ModalProps = {
-  onClose: () => void;
-};
+interface ModalProps {
+  children: React.ReactNode;
+  title: string;
+  onClose: () => void
+}
 
-export const Modal: React.FC<ModalProps> = ({ onClose }) => {
+export function Modal({ children, title, onClose }: ModalProps) {
   return (
-    <div className="modal">
-      <div className="modal-content">
-        <button onClick={onClose} className="close-button">
-          Close
-        </button>
+    <>
+      <div className="modal" onClick={onClose}>
+        <div className="modal-container">
+          <h1>{title}</h1>
+          {children}
+        </div>
       </div>
-    </div>
+    </>
   );
-};
+}
